@@ -2,22 +2,21 @@ name: PHP Composer
 
 on: [push]
 
-branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build: 
 
     runs-on: ubuntu-latest
-  - name: Install dependencies
-      uses: php-actions/composer@v5
+    
+
+    steps:
+    - uses: php-actions/composer@v5
+      name: Install dependencies
+      
       with:
         dev: no
         args: --profile --ignore-platform-reqs
 
-    steps:
-    - uses: php-actions/composer@v5
 
     - name: Install dependencies
       run: install
