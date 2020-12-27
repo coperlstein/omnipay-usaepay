@@ -16,9 +16,6 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-  php-tests:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
     env:
       COMPOSER_NO_INTERACTION: 1
 
