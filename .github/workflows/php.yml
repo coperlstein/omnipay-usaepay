@@ -11,11 +11,6 @@ jobs:
 
     steps:
     - uses: php-actions/composer@v5
-      name: Install dependencies
-      
-      with:
-        dev: no
-        args: --profile --ignore-platform-reqs
 
 
     - name: Install dependencies
