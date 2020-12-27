@@ -1,0 +1,62 @@
+{
+    "name": "coperlstein/omnipay-usaepay",
+    "type": "library",
+    "description": "USA ePay driver for the Omnipay library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "usaepay"
+    ],
+    "homepage": "https://github.com/ilanco/omnipay-usaepay",
+     "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "coperlstein",
+            "email": "admin@portnoys.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\usaepay\\" : "src/" }
+    },
+    "repositories": [
+        {
+            "config": {
+        "platform": {
+            "php": "7.3.0"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+
+            "type":"package",
+            "package": {
+                "name": "usaepay/usaepay",
+                "version": "1",
+                "source": {
+                    "url": "https://github.com/coperlstein/omnipay-usaepay",
+                    "type": "git",
+                },
+                "autoload": {
+                    "files": [
+                        "usaepay.php"
+                    ]
+                }
+            }
+        }
+        "require": {
+        "php": "^7.2|^8.0",
+        "omnipay/common": "^3",
+        "php-http/discovery": "^1.12",
+        "php-http/guzzle7-adapter": "^0.1"
+        "usaepay/usaepay": "1"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+
+}
