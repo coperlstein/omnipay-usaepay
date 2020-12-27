@@ -1,21 +1,26 @@
 name: PHP Composer
 
-on: coperlstein/omnipay-usaepay
-  push: omnipay-usaepay
-    branches: [ master ]
+on: [push]
+
+branches: [ master ]
   pull_request:
     branches: [ master ]
 
-jobs: omnipay-usaepay
-  build: 1
+jobs:
+  build: 
 
     runs-on: ubuntu-latest
+  - name: Install dependencies
+      uses: php-actions/composer@v5
+      with:
+        dev: no
+        args: --profile --ignore-platform-reqs
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: php-actions/composer@v5
 
-    - name: Validate composer.json and composer.lock
-      run: composer validate
+    - name: Install dependencies
+      run: install
 
     - name: Cache Composer packages
       id: composer-cache
