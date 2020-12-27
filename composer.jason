@@ -14,12 +14,12 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "1",
-            "email": "1@gmail.com"
+            "name": "coperlstein",
+            "email": "admin@portnoys.org"
         }
     ],
     "autoload": {
-        "psr-4": { "Omnipay\\USAePay\\" : "src/" }
+        "psr-4": { "Omnipay\\usaepay\\" : "src/" }
     },
     "repositories": [
         {
@@ -28,7 +28,7 @@
                 "name": "usaepay/usaepay",
                 "version": "1",
                 "source": {
-                    "url": "https://github.com/coperlstein/omnipay-usaepay.git",
+                    "url": "https://github.com/coperlstein/omnipay-usaepay",
                     "type": "git",
                 },
                 "autoload": {
