@@ -1,0 +1,49 @@
+{
+    "name": "coperlstein/omnipay-usaepay",
+    "type": "library",
+    "description": "USA ePay driver for the Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "usaepay"
+    ],
+    "homepage": "https://github.com/ilanco/omnipay-usaepay",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "1",
+            "email": "1@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\USAePay\\" : "src/" }
+    },
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+                "name": "usaepay/usaepay",
+                "version": "1",
+                "source": {
+                    "url": "https://github.com/coperlstein/omnipay-usaepay.git",
+                    "type": "git",
+                },
+                "autoload": {
+                    "files": [
+                        "usaepay.php"
+                    ]
+                }
+            }
+        }
+    ],
+    "require": {
+        "omnipay/common": "~2.0",
+        "usaepay/usaepay": "1"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    }
+}
