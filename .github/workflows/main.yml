@@ -28,7 +28,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: omnipay-usaepay
+      uses: coperlstein/omnipay-usaepay
 
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
